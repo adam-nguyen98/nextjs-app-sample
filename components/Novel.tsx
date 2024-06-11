@@ -26,7 +26,7 @@ export const Novel = memo(({ novel }: Props) => {
   };
 
   return (
-    <article className="flex flex-col p-4 bg-slate-200 dark:bg-zinc-800 hover:scale-105 shadow-sm hover:shadow-lg hover:bg-slate-300 transition duration-300 ease-out text-white">
+    <article className="flex flex-col p-4 bg-slate-200 dark:bg-zinc-800 hover:text-black hover:scale-105 shadow-sm hover:shadow-lg hover:bg-slate-300 transition duration-300 ease-out text-white">
       {/* image */}
       {novel.image && (
         <div>
@@ -49,8 +49,8 @@ export const Novel = memo(({ novel }: Props) => {
                 obcaecati illum dolor. Fuga incidunt maxime culpa.
     	</p>
       {/* source and date */}
-      <div className="flex justify-between italic text-xs mt-auto text-slate-500">
-        <p className="text-white text-lg">Author: {novel.author}</p>
+      <div className="flex justify-between italic text-xs mt-auto">
+        <p className="text-lg">Author: {novel.author}</p>
       </div>
       <Link
         href={`${BASE_URL}/novel/${novel.id}`}

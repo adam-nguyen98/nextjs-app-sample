@@ -1,5 +1,5 @@
 export const typeDefs = `#graphql 
-    type Novel {
+  type Novel {
     id: ID!
     title: String
     image: String
@@ -16,6 +16,6 @@ export const typeDefs = `#graphql
   type Mutation {
     addNovel (image:String, title:String, author: String) : Novel
     updateNovel(id:ID!, title:String, image:String, author: String) : Novel
-    deleteNovel(id:ID!) : Boolean
+    deleteNovel(id:ID!) : Novel
   }
 `;

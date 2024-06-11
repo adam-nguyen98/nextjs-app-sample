@@ -1,6 +1,6 @@
 import { Context } from "@/pages/api/graphql";
 
-export const resolvers = {
+export const novelResolvers = {
 	Query: {
 		//get novel by id
 		novel: async (_parent: any, args: INovel, context: Context) => {
@@ -50,6 +50,3 @@ export const resolvers = {
 		},
 	},
 };
-
-
-
